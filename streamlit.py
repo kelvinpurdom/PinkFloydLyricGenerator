@@ -1,7 +1,6 @@
 # import packages
 import streamlit as st
 import pandas as pd
-from prediction import predict
 from model import make_lyrics
 
 
