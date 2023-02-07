@@ -1,9 +1,7 @@
 
 from tensorflow import keras
-from keras.layers import Embedding, LSTM, Dense, Dropout, Bidirectional
 from keras.preprocessing.text import Tokenizer
 from keras.utils import pad_sequences
-import pandas as pd
 import numpy as np
 from prediction import predict
 
@@ -38,5 +36,3 @@ def make_lyrics(seed_text, next_words):
         seed_text += " " + output_word
     print(seed_text)
     return seed_text
-
-make_lyrics('I will', 10)
