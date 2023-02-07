@@ -9,6 +9,7 @@ numpy
 pandas
 scikit-learn
 keras
+keras_preprocessing
 tensorflow
 
 # tests/linter
