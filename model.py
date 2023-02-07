@@ -39,4 +39,3 @@ def make_lyrics(seed_text, next_words):
 
 
 
-print(make_lyrics('I', 12))
