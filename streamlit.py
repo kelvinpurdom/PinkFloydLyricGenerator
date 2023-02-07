@@ -2,10 +2,29 @@
 import streamlit as st
 import pandas as pd
 from model import make_lyrics
+import webbrowser
+
+# set tab button
+st.set_page_config(page_title='Pink Floyd Lyric Generator')
+
+# remove menu and footer from streamlit
+hide_default_format = """
+       <style>
+
+       footer {visibility: hidden;}
+       </style>
+       """
+st.markdown(hide_default_format, unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center'>Pink Floyd Lyric Generator</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center'>Created by Kelvin Purdom</h3>", unsafe_allow_html=True)
 
 
+url = 'https://github.com/kelvinpurdom'
+if st.button('Kelvins Github'):
+    webbrowser.open_new_tab(url)
+st.image("""https://www.grunge.com/img/gallery/the-untold-truth-of-pink-floyd/intro-1626917943.webp""")
 
-seed = st.text_input('seed text:', '')
-
-
-st.text(make_lyrics(seed, 40))
+st.markdown("<h6 style='text-align: center'>Photo: Michael Ochs Archives/Getty Images</h6>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center'>Enter some words below to create some new Pink Floyd Lyrics:</h3>", unsafe_allow_html=True)
+seed = st.text_input('', '')
+st.subheader(make_lyrics(seed, 20))
