@@ -3,13 +3,10 @@ from tensorflow import keras
 from keras.layers import Embedding, LSTM, Dense, Dropout, Bidirectional
 from keras.preprocessing.text import Tokenizer
 from keras.utils import pad_sequences
-from keras.models import Sequential
 import pandas as pd
-from keras.callbacks import ModelCheckpoint
 import numpy as np
 from prediction import predict
 
-from keras.utils import np_utils
 import pickle
 
 max_sequence_len = 88
