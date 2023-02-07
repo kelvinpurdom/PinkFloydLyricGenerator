@@ -8,4 +8,4 @@ from model import make_lyrics
 seed = st.text_input('seed text:', '')
 
 
-st.text(make_lyrics(seed, 7))
+st.text(make_lyrics(seed, 40))
