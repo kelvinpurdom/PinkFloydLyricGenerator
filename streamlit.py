@@ -4,6 +4,16 @@ import pandas as pd
 from model import make_lyrics
 import webbrowser
 
+"""
+This code sets the page title of a Streamlit page to
+"Pink Floyd Lyric Generator". It also hides the default
+menu and footer from the page, adds a header and subheader
+to the page, adds a button that links to
+Kelvin Purdom's Github, adds an image of Pink Floyd,
+and adds a text input for users to enter words which will
+be used to generate new Pink Floyd lyrics.
+"""
+
 # set tab button
 st.set_page_config(page_title='Pink Floyd Lyric Generator')
 
