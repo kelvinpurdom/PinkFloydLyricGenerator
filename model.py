@@ -23,8 +23,8 @@ def make_lyrics(seed_text, next_words):
     It then reshapes the token list into a 3D array which
     is used as an input for the model. The model then predicts
     the next word and returns it as part of the lyrics.
-
     """
+
     max_sequence_len = 88
     pred_index=[]
     for i in range(next_words):
