@@ -1,8 +1,6 @@
 
 # import modules
-import pickle
 import numpy as np
-from tensorflow import keras
 from keras.preprocessing.text import Tokenizer
 from keras.utils import pad_sequences
 import keras
