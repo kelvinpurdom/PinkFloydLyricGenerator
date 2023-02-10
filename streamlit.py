@@ -15,7 +15,7 @@ be used to generate new Pink Floyd lyrics.
 """
 
 # set tab button
-st.set_page_config(page_title='Pink Floyd Lyric Generator')
+#st.set_page_config(page_title='Pink Floyd Lyric Generator')
 
 # remove menu and footer from streamlit
 hide_default_format = """
