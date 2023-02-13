@@ -26,7 +26,15 @@ make clean install test
 Check for PinkFloydLyricGenerator in gitlab.com/{group}.
 If your project is not set please add it:
 
+- Create a new project on `gitlab.com/{group}/PinkFloydLyricGenerator`
+- Then populate it:
 
+```bash
+##   e.g. if group is "{group}" and project_name is "MushroomPrediction"
+git remote add origin git@github.com:{group}/PinkFloydLyricGenerator.git
+git push -u origin master
+git push -u origin --tags
+```
 
 ## Screenshot of App
 ![test](PinkScreen.png)
