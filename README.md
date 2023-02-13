@@ -8,6 +8,10 @@
 ## Introduction
 I have created a project that uses a LSTM model, to generate new and interesting suggestions for lyrics by letting the user input a seed text(or starting lyrics), then using the Pink Floyd Lyric database to suggest potential words to follow the seed text.
 
+## Screenshot of App
+![test](PinkScreen.png)
+
+
 ## Installing Dependencies
 The initial setup.
 
@@ -30,11 +34,46 @@ If your project is not set please add it:
 - Then populate it:
 
 ```bash
-##   e.g. if group is "{group}" and project_name is "MushroomPrediction"
+##   e.g. if group is "{group}" and project_name is "PinkFloydLyricGenerator"
 git remote add origin git@github.com:{group}/PinkFloydLyricGenerator.git
 git push -u origin master
 git push -u origin --tags
 ```
 
-## Screenshot of App
-![test](PinkScreen.png)
+Functionnal test with a script:
+
+```bash
+cd
+mkdir tmp
+cd tmp
+PinkFloydLyricGenerator-run
+```
+
+# Install
+
+Go to `https://github.com/{group}/PinkFloydLyricGenerator` to see the project, manage issues,
+setup you ssh public key, ...
+
+Create a python3 virtualenv and activate it:
+
+```bash
+sudo apt-get install virtualenv python-pip python-dev
+deactivate; virtualenv -ppython3 ~/venv ; source ~/venv/bin/activate
+```
+
+Clone the project and install it:
+
+```bash
+git clone git@github.com:{group}/PinkFloydLyricGenerator.git
+cd PinkFloydLyricGenerator
+pip install -r requirements.txt
+make clean install test                # install and test
+```
+Functionnal test with a script:
+
+```bash
+cd
+mkdir tmp
+cd tmp
+PinkFloydLyricGenerator-run
+```
