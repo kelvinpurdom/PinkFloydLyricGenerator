@@ -6,7 +6,7 @@
 #### Streamlit app: https://pinkfloydlyricgenerator.streamlit.app/
 
 ## Introduction
-I have created a project that uses a LSTM model, to generate new and interesting suggestions for lyrics by letting the user input a seed text(or starting lyrics), then using the Pink Floyd Lyric database to suggest potential words to follow the seed text.
+I have created a project that uses a LSTM model, to generate new and interesting suggestions for lyrics by letting the user input a seed text(or starting lyrics), then using the Pink Floyd Lyric database to suggest potential words to follow the seed text. It is a fun project but has some limitations regarding the size of the data, so results can be a little strange. Trained on a larger dataset, we would see better results.
 
 ## Screenshot of App
 ![test](PinkScreen.png)
