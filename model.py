@@ -1,4 +1,3 @@
-
 # import modules
 import numpy as np
 from keras.preprocessing.text import Tokenizer
